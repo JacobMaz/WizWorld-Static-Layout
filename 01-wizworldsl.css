@@ -103,12 +103,21 @@ body {
     background-image: url(../../imageAssets/hpLogo.png);
     background-size: cover;
     display: grid;
-    grid-template: repeat(3, 2.3em) / 20.5em 0.5em;
+    grid-template: repeat(4, 1.75em) / 10em 10.5em 0.5em;
 }
 
 #hpFanClubTM {
     font-size: 0.5em;
     color: white;
     grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+#hpFanClubFC {
+    color: white;
+    font-family: Sofia Pro,serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    grid-row-start: 4;
     grid-column-start: 2;
 }
