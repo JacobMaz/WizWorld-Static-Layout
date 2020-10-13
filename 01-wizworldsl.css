@@ -2,6 +2,12 @@ body {
     background-image: url(https://images.ctfassets.net/usf1vwtuqyxm/6LbbjwYUPegy7jj863W3Rp/02d613a6f45a4b1120475cc3999bab1f/qtta_02-homepage.png?w=1440&h=1024&fit=fill&fm=webp);
 }
 
+.staticLayoutWhole {
+    display: grid;
+    grid-template-columns: repeat( 31, 1fr);
+    grid-template-rows: repeat(15, 0.25fr);
+}
+
 .navbar {
     display: flex;
         align-items: center;
@@ -28,7 +34,7 @@ body {
 #navbarLogo {
     position: fixed;
     top: 0.6em;
-    right: 46.3%;
+    right: 45.6%;
 }
 
 .loginNavBarButton {
@@ -80,7 +86,13 @@ body {
     list-style-type: none;
 }
 
-
 .navbar:hover {
     background-image: linear-gradient(to bottom, rgb(41, 39, 56) 0%, rgb(41, 39, 56) 60%, rgb(24, 24, 27), 60%,rgb(24, 24, 27) 50%);
+}
+
+.harryPotterText {
+    height: 7em;
+    width: 20.2em;
+    grid-column-start: 16;
+    grid-row-start: 6;
 }
