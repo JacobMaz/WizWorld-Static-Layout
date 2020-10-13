@@ -94,5 +94,21 @@ body {
     height: 7em;
     width: 20.2em;
     grid-column-start: 16;
-    grid-row-start: 6;
+    grid-row-start: 6;    
+}
+
+#hpFanClubLogo {
+    height: 8em;
+    width: 21em;
+    background-image: url(../../imageAssets/hpLogo.png);
+    background-size: cover;
+    display: grid;
+    grid-template: repeat(3, 2.3em) / 20.5em 0.5em;
+}
+
+#hpFanClubTM {
+    font-size: 0.5em;
+    color: white;
+    grid-row-start: 3;
+    grid-column-start: 2;
 }
