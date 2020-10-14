@@ -3,9 +3,16 @@ body {
 }
 
 .staticLayoutWhole {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat( 31, 1fr);
-    grid-template-rows: repeat(15, 0.25fr);
+    grid-template-rows: repeat(15, 0.25fr); */
+    display: flex;
+        justify-content: center;
+    /* background-color: black; */
+}
+
+.navbarDiv {
+    z-index: 100;
 }
 
 .navbar {
@@ -93,8 +100,12 @@ body {
 .harryPotterText {
     height: 7em;
     width: 20.2em;
-    grid-column-start: 16;
+    /* grid-column-start: 16;
     grid-row-start: 6;    
+    display: ; */
+    position: relative;
+    left: 29.8em;
+    top: 9em;
 }
 
 #hpFanClubLogo {
@@ -103,21 +114,77 @@ body {
     background-image: url(../../imageAssets/hpLogo.png);
     background-size: cover;
     display: grid;
-    grid-template: repeat(4, 1.75em) / 10em 10.5em 0.5em;
+    grid-template: repeat(4, 1.75em) / 10em 2em 8.5em 0.5em;
 }
 
 #hpFanClubTM {
     font-size: 0.5em;
     color: white;
     grid-row-start: 3;
-    grid-column-start: 3;
+    grid-column-start: 4;
 }
 
 #hpFanClubFC {
     color: white;
     font-family: Sofia Pro,serif;
     font-size: 1.5em;
-    font-weight: bolder;
+    font-weight: bold;
     grid-row-start: 4;
-    grid-column-start: 2;
+    grid-column-start: 3;
+}
+
+.quidditchDiv {
+    /* background-color: gray; */
+    width: 60em;
+    height: 25em;
+    position: relative;
+    top: 20em;
+    right: 10em;
+    display: grid;
+    grid-template: repeat( 25, 1em) / repeat( 60,1em);
+}
+
+#quidditchHeader {
+    font-family: Bluu Next,serif;
+    color: #f9f4f2;
+    height: 3.5em;
+    width: 12.1em;
+    font-size: 3.33em;
+    grid-row-start: 1;
+    grid-column-start: 11;
+    text-align: center;
+    margin-top: 0;
+    /* background-color: black; */
+}
+
+#quidditchP {
+    font-family: Sofia Pro,serif;
+    font-size: 16px;
+    color: #f9f4f2;
+    height: 4em;
+    width: 25em;
+    grid-row-start: 13;
+    grid-column-start: 19;
+    text-align: center;
+    /* background-color: darkblue; */
+}
+
+.quidditchButtonBox {
+    width: 320px;
+    grid-row-start: 20;
+    grid-column-start: 22;
+}
+
+#quidditchButton {
+    background-color: #6b63b5;
+    height: 5em;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: Sofia Pro, serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 18px 31px;
 }
