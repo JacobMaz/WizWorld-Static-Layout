@@ -1,7 +1,9 @@
 body {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://images.ctfassets.net/usf1vwtuqyxm/6LbbjwYUPegy7jj863W3Rp/02d613a6f45a4b1120475cc3999bab1f/qtta_02-homepage.png?w=1440&h=1024&fit=fill&fm=webp);
+    /* background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://images.ctfassets.net/usf1vwtuqyxm/6LbbjwYUPegy7jj863W3Rp/02d613a6f45a4b1120475cc3999bab1f/qtta_02-homepage.png?w=1440&h=1024&fit=fill&fm=webp); */
      margin: 0;
+     /* background-image: linear-gradient; */
     /* backdrop-filter: brightness(65%);  */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imageAssets/backgroundStarryNight.jpg");
 }
 
 a:link {
@@ -9,6 +11,9 @@ a:link {
 }
 
 .staticLayoutWhole {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(https://images.ctfassets.net/usf1vwtuqyxm/6LbbjwYUPegy7jj863W3Rp/02d613a6f45a4b1120475cc3999bab1f/qtta_02-homepage.png?w=1440&h=1024&fit=fill&fm=webp);
+    background-repeat: no-repeat;
+    background-size: 100% 50em;
     display: grid;
     grid-template-columns: repeat( auto-fill, 1em);
     grid-template-rows: repeat( auto-fill, 1em);
