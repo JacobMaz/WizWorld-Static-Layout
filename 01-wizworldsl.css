@@ -1,14 +1,15 @@
 body {
     background-image: url(https://images.ctfassets.net/usf1vwtuqyxm/6LbbjwYUPegy7jj863W3Rp/02d613a6f45a4b1120475cc3999bab1f/qtta_02-homepage.png?w=1440&h=1024&fit=fill&fm=webp);
-    /* margin: 0; */
+    /* margin: 0;
+    backdrop-filter: brightness(65%); */
 }
 
 .staticLayoutWhole {
     display: grid;
-    grid-template-columns: repeat( 31, 1fr);
-    grid-template-rows: repeat(15, 0.25fr);
-    display: flex;
-        justify-content: center;
+    grid-template-columns: repeat( auto-fill, 1em);
+    grid-template-rows: repeat( auto-fill, 1em);
+    /* display: flex;
+        justify-content: center; */
     height: 100em;
     /* backdrop-filter: brightness(65%); */
 } 
@@ -102,12 +103,11 @@ body {
 .harryPotterText {
     height: 7em;
     width: 20.2em;
-    /* grid-column-start: 16;
-    grid-row-start: 6;    
-    display: ; */
-    position: relative;
+    grid-column-start: 34;
+    grid-row-start: 10;    
+    /* position: relative;
     left: 29.8em;
-    top: 9em;
+    top: 9em; */
 }
 
 #hpFanClubLogo {
@@ -139,9 +139,11 @@ body {
     /* background-color: gray; */
     width: 60em;
     height: 25em;
-    position: relative;
+    grid-column-start: 13;
+    grid-row-start: 22;
+    /* position: relative;
     top: 20em;
-    right: 10em;
+    right: 10em; */
     display: grid;
     grid-template: repeat( 25, 1em) / repeat( 60,1em);
 }
@@ -195,18 +197,136 @@ body {
     height: 1em;
     width: 1em;
     background-color: white;
-    transform: rotate(45deg);
+    grid-column-start: 44;
+    grid-row-start: 50;
     position: relative;
-        right: 45.4%;
-        top: 50em;
+    transform: rotate(45deg);
     animation-name: teardrop;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
 @keyframes teardrop {
-    0% {opacity: 0; top: 50em;}
-    80% {opacity: 1; top: 55em;}
-    100% {opacity: 0; top: 55em;}
+    0% {opacity: 0; top: 0em;}
+    80% {opacity: 1; top: 4em;}
+    100% {opacity: 0; top: 4em;}
 }
 
+.articleSection {
+    /* background-color: gray; */
+    height: 30em;
+    width: 80em;
+    grid-row-start: 61;
+    grid-column-start: 4;
+    display: grid;
+    grid-template: repeat(auto-fill, 1em) / repeat(auto-fill, 1em)
+}
+
+.article {
+    /* background-color: black; */
+    height: 28em;
+    width: 20em;
+    color: white;
+    margin: 1em;
+}
+
+#hogWBStudioTourBox {
+    grid-column-start: 5;
+    display: grid;
+    grid-template: repeat(auto-fill, 1em) / repeat(auto-fill, 1em);
+}
+
+#greatHallChristmas {
+    height: 11.15em;
+}
+
+#newsWB {
+    /* background-color: red; */
+    width: 3em;
+    color: white;
+    font-family: Mason Sans OT,serif;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 0px;
+    position: relative;
+        left: 5em;
+        bottom: 6em;
+}
+
+#wbTourCaption {
+    /* background-color: rebeccapurple; */
+    width: 6em;
+    font-family: Bluu Next,serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    position: relative;
+        bottom: 2.1em;
+        left: 2em;
+}
+
+#quidThrouAgesBox {
+    grid-column-start: 30;
+}
+
+#quidThrAgesPhoto {
+    height: 11.15em;
+}
+
+#quidAgesFeature {
+    /* background-color: red; */
+    width: 5em;
+    color: white;
+    font-family: Mason Sans OT,serif;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 0px;
+    position: relative;
+        left: 5em;
+        bottom: 6em;
+}
+
+#quidAgeCaption {
+    /* background-color: rebeccapurple; */
+    width: 6em;
+    font-family: Bluu Next,serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    position: relative;
+        bottom: 2.1em;
+        left: 2em;
+}
+
+#quidTeamsBox {
+    grid-column-start: 55;
+}
+
+#quiddTeamPhoto {
+    height: 11.15em;
+}
+
+#quidTeamsFeature {
+    /* background-color: red; */
+    width: 5em;
+    color: white;
+    font-family: Mason Sans OT,serif;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 0px;
+    position: relative;
+        left: 5em;
+        bottom: 6em;
+}
+
+#quidTeamsCaption {
+    /* background-color: rebeccapurple; */
+    width: 6em;
+    font-family: Bluu Next,serif;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    position: relative;
+        bottom: 2.1em;
+        left: 2em;
+}
