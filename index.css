@@ -20,8 +20,14 @@ a:link {
 
 } 
 
+.navbarBackgoundColor {
+    z-index: 99;
+}
+
 .navbarDiv {
     z-index: 100;
+    /* animation-name: fadeIn;
+    animation-duration: 3s; */
 }
 
 .navbar {
@@ -104,6 +110,18 @@ a:link {
 
 .navbar:hover {
     background-image: linear-gradient(to bottom, rgb(41, 39, 56) 0%, rgb(41, 39, 56) 60%, rgb(24, 24, 27), 60%,rgb(24, 24, 27) 50%);
+    animation-name: navbarHoverFadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes navbarHoverFadeIn {
+    0% { opacity: 0; background-image: linear-gradient(to bottom, rgb(41, 39, 56) 0%, rgb(41, 39, 56) 60%, rgb(24, 24, 27), 60%,rgb(24, 24, 27) 50%)};
+    100% {opacity: 1; background-image: linear-gradient(to bottom, rgb(41, 39, 56) 0%, rgb(41, 39, 56) 60%, rgb(24, 24, 27), 60%,rgb(24, 24, 27) 50%)};
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;};
+    100% {opacity: 1;};
 }
 
 .harryPotterText {
@@ -111,6 +129,8 @@ a:link {
     width: 20.2em;
     grid-column-start: 35;
     grid-row-start: 10;    
+    animation-name: fadeIn;
+    animation-duration: 3s;
     /* position: relative;
     left: 29.8em;
     top: 9em; */
@@ -152,6 +172,8 @@ a:link {
     right: 10em; */
     display: grid;
     grid-template: repeat( 25, 1em) / repeat( 60,1em);
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 #quidditchHeader {
@@ -225,7 +247,9 @@ a:link {
     grid-row-start: 61;
     grid-column-start: 6;
     display: grid;
-    grid-template: repeat(auto-fill, 1em) / repeat(auto-fill, 1em)
+    grid-template: repeat(auto-fill, 1em) / repeat(auto-fill, 1em);
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 .article {
