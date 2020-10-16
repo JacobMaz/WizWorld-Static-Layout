@@ -367,3 +367,102 @@ a:link {
         bottom: 2.1em;
         left: 2em;
 }
+
+.pageBottom {
+    /* background-color: gray; */
+    width: 71em;
+    height: 4em;
+    grid-row-start: 93;
+    grid-column-start: 11;
+    display: grid;
+        grid-template-columns: repeat(auto-fill, 1em);
+        grid-template-rows: repeat(auto-fill, 1em);
+}
+
+.circle {
+    height: 2.85em;
+    width: 2.85em;
+    background-color: white;
+    opacity: .2;
+    border-radius: 50%;
+}
+
+#circleOne {
+    grid-column-start: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circleTwo {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#triangleTwo {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 16px solid gray;
+    border-bottom: 8px solid transparent;
+  }
+
+  #triangleOne {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 16px solid gray;
+    border-bottom: 8px solid transparent;
+  }
+
+  .smallCircle {
+      height: .5em;
+      width: .5em;
+      background-color: gray;
+      border-radius: 50%;;
+      opacity: 0.5;
+  }
+
+  #smallCircleOne {
+      grid-column-start: 15;
+      grid-row-start: 3;
+      background-color: white;
+      opacity: 1;
+  }
+
+  #smallCircleTwo {
+    grid-column-start: 16;
+    grid-row-start: 3;
+}
+
+#smallCircleThree {
+    grid-column-start: 17;
+    grid-row-start: 3;
+}
+
+#smallCircleFour {
+    grid-column-start: 18;
+    grid-row-start: 3;
+}
+
+#smallCircleFive {
+    grid-column-start: 19;
+    grid-row-start: 3;
+}
+
+#smallCircleSix {
+    grid-column-start: 20;
+    grid-row-start: 3;
+}
+
+.grayLine {
+    width: 46em;
+    height: .2em;
+    background-color: gray;
+    grid-column-start: 22;
+    grid-row-start: 3;
+    opacity: 0.5;
+}
